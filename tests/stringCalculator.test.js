@@ -15,3 +15,8 @@ function test(description, callBalck) {
 test("handle empty string return 0", () => {
     if (stringCal("") !== 0) throw new Error("Expected 0");
 })
+
+// Second Case return number
+test("single return number it self", () => {
+    if (stringCal("4") !== 4) throw new Error("Expected 0");
+})

@@ -4,7 +4,7 @@ function stringCal(string) {
     let sum =0;
     for (let index = 0; index < string.length; index++) {
         if(string[index] !== ","){
-            sum += parseInt(string[index]);
+            sum += (string[index].charCodeAt(0)-48);
         }
     }
     return sum;

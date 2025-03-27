@@ -40,3 +40,8 @@ test("Return multiple number sum ", () => {
 test("Return multiple double number sum ", () => {
     if (stringCal("1,2,3,4,50,30,101") !== 191) throw new Error("Expected 191");
 })
+
+// Seventh Case return Two double number sum
+test("Handle New Line Delimeter", () => {
+    if (stringCal("1\n2,3") !== 6) throw new Error("Expected 6");
+})

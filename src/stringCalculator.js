@@ -1,5 +1,5 @@
-function stringCal(string) {
-    if (string === "") return 0;
+export  function stringCal(string) {
+    if (!string) return 0;
 
     let delimeter = [',','/n',"\n"];
 
@@ -31,5 +31,3 @@ function stringCal(string) {
     }
     return sum + num;
 }
-
-module.exports = { stringCal }

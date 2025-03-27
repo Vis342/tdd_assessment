@@ -45,3 +45,8 @@ test("Return multiple double number sum ", () => {
 test("Handle New Line Delimeter", () => {
     if (stringCal("1\n2,3") !== 6) throw new Error("Expected 6");
 })
+
+// Eighth Case return Two double number sum
+test("Handle Custom Delimeter", () => {
+    if (stringCal("//;\n1;2") !== 3) throw new Error("Expected 3");
+})

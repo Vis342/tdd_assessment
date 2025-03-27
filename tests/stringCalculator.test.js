@@ -20,3 +20,8 @@ test("handle empty string return 0", () => {
 test("single return number it self", () => {
     if (stringCal("4") !== 4) throw new Error("Expected 0");
 })
+
+// Third Case return Two number sum
+test("return two number sum ", () => {
+    if (stringCal("1,5") !== 6) throw new Error("Expected 6");
+})

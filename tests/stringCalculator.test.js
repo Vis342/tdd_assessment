@@ -12,17 +12,17 @@ function test(description, callBalck) {
 
 
 //First Cas Hanlde Empty String
-test("handle empty string return 0", () => {
+test("Handle empty string return 0", () => {
     if (stringCal("") !== 0) throw new Error("Expected 0");
 })
 
 // Second Case return number
-test("single return number it self", () => {
+test("Single return number it self", () => {
     if (stringCal("4") !== 4) throw new Error("Expected 0");
 })
 
 // Third Case return Two number sum
-test("return two number sum ", () => {
+test("Return two number sum ", () => {
     if (stringCal("1,5") !== 6) throw new Error("Expected 6");
 })
 

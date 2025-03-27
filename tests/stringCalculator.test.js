@@ -30,3 +30,8 @@ test("Return two number sum ", () => {
 test("Return two Double number sum ", () => {
     if (stringCal("12,35") !== 47) throw new Error("Expected 47");
 })
+
+// Fifth Case return Two double number sum
+test("Return multiple number sum ", () => {
+    if (stringCal("1,2,3,4,5") !== 15) throw new Error("Expected 15");
+})

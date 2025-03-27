@@ -25,3 +25,8 @@ test("single return number it self", () => {
 test("return two number sum ", () => {
     if (stringCal("1,5") !== 6) throw new Error("Expected 6");
 })
+
+// Fourth Case return Two double number sum
+test("Return two Double number sum ", () => {
+    if (stringCal("12,35") !== 47) throw new Error("Expected 47");
+})

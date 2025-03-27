@@ -60,3 +60,11 @@ test("Return single Negative number ", () => {
     }
 })
 
+// Tenth Case Return multiple Negative number
+test("Return multiple Negative number ", () => {
+    try {
+        console.log(stringCal("1,-2,3,-4,5,-6"));
+    } catch (error) {
+        throw new Error(error.message)   
+    }
+})

@@ -36,17 +36,27 @@ test("Return multiple number sum ", () => {
     if (stringCal("1,2,3,4,5") !== 15) throw new Error("Expected 15");
 })
 
-// Sixth Case return Two double number sum
+// Sixth Case Return multiple double number sum
 test("Return multiple double number sum ", () => {
     if (stringCal("1,2,3,4,50,30,101") !== 191) throw new Error("Expected 191");
 })
 
-// Seventh Case return Two double number sum
+// Seventh Case Handle New Line Delimeter
 test("Handle New Line Delimeter", () => {
     if (stringCal("1\n2,3") !== 6) throw new Error("Expected 6");
 })
 
-// Eighth Case return Two double number sum
+// Eighth Case Handle Custom Delimeter
 test("Handle Custom Delimeter", () => {
     if (stringCal("//;\n1;2") !== 3) throw new Error("Expected 3");
 })
+
+// nineth Case Return single Negative number
+test("Return single Negative number ", () => {
+    try {
+        console.log(stringCal("1,2,3,-4"));
+    } catch (error) {
+        throw new Error(error.message)   
+    }
+})
+
